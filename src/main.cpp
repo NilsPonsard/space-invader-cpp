@@ -115,10 +115,31 @@ void drawArena(const pos &apple)
     GotoXY(WIDTH, y);
     cout << "─" << endl;
   }
+  GotoXY(apple.x, apple.y);
+  Couleur(KRouge);
+  cout << "██" << endl;
+}
+void dead(vector<pos> &tail)
+{
+  ClearScreen();
+  Couleur(KReset);
+  cout << "vous avez perdu, score : " << tail.size() << endl;
+  exit(0);
 }
 
-void updateSnake(vector<pos> &tail, const unsigned &direction)
+void updateSnake(vector<pos> &tail, const unsigned &direction, pos &apple)
 {
+
+  if (tail[0].x == apple.x && tail[0].y == apple.y)
+  {
+    tail.push_back({0, 0});
+    unsigned x;
+    unsigned y;
+    x = (rand() % (WIDTH - 2) + 2) / 2;
+    y = (rand() % (HEIGHT - 2) + 2) / 2;
+    apple = {x * 2, y * 2};
+  }
+
   cout << tail.size() << endl;
   for (unsigned i(tail.size() - 1); i > 0; --i)
   {
@@ -127,13 +148,13 @@ void updateSnake(vector<pos> &tail, const unsigned &direction)
   switch (direction)
   {
   case 0:
-    tail[0].x -= 2;
+    tail[0].x -= 1;
     break;
   case 1:
     tail[0].y += 2;
     break;
   case 2:
-    tail[0].x += 2;
+    tail[0].x += 1;
     break;
   case 3:
     tail[0].y -= 2;
@@ -141,11 +162,20 @@ void updateSnake(vector<pos> &tail, const unsigned &direction)
   default:
     break;
   }
+  if (tail[0].x < 2 || tail[0].x > WIDTH - 2)
+    dead(tail);
+  if (tail[0].y < 2 || tail[0].y > HEIGHT - 2)
+    dead(tail);
+  for (auto iter(tail.begin() + 3); iter < tail.end(); ++iter)
+  {
+    if ((*iter).x == tail[0].x && (*iter).y == tail[0].y)
+      dead(tail);
+  }
 }
 
 int main()
 {
-
+  srand(time(NULL));
   char c;
   double seconds(0);
   auto timer = chrono::steady_clock::now();
@@ -157,20 +187,22 @@ int main()
   Couleur(KReset);
   cout << "Retour à la normale" << endl;
   pos apple({8, 8});
-  vector<pos>
-      tail(1, {5, 5});
-  tail.push_back({5, 6});
-  tail.push_back({5, 8});
-  tail.push_back({5, 10});
+  vector<pos> tail;
+  tail.push_back({6, 4});
+  tail.push_back({6, 6});
+  tail.push_back({6, 8});
+  tail.push_back({6, 10});
 
   unsigned dir(1);
+  unsigned tempdir(1);
   while (1)
   {
     timer = chrono::steady_clock::now();
     drawArena(apple);
-    updateSnake(tail, dir);
+    updateSnake(tail, dir, apple);
     drawSnake(tail);
-    while (chrono::duration_cast<chrono::milliseconds>(chrono::steady_clock::now() - timer).count() < 160)
+    tempdir = dir;
+    while (chrono::duration_cast<chrono::milliseconds>(chrono::steady_clock::now() - timer).count() < 100)
     {
       //Couleur(KReset);
       c = '_';
@@ -183,25 +215,28 @@ int main()
       switch (c)
       {
       case 'A':
-        dir = 0;
+        if (dir != 2)
+          tempdir = 0;
         break;
       case 'C':
-        dir = 1;
+        if (dir != 3)
+
+          tempdir = 1;
         break;
       case 'B':
-        dir = 2;
+        if (dir != 0)
+          tempdir = 2;
         break;
       case 'D':
-        dir = 3;
-        break;
-      case ' ':
-        tail.push_back({200, 200});
+        if (dir != 1)
+          tempdir = 3;
         break;
       default:
         break;
       }
       //cout << chrono::duration_cast<chrono::milliseconds>(chrono::steady_clock::now() - timer).count() << endl;
     }
+    dir = tempdir;
 
     ClearScreen();
   }
