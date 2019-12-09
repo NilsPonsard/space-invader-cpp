@@ -1,6 +1,10 @@
 
+#include <gameUtils.h>
+
 #ifndef ENTITY_H
 #define ENTITY_H
+
+typedef std::vector<std::string> Vstring;
 
 class Object
 {
@@ -10,19 +14,19 @@ private:
 public:
     Object(pos position);
     ~Object();
+    void show();
 };
 
-class entity
+class Entity : Object
 {
 private:
 public:
-    entity();
-    ~entity();
-    void show();
+    Entity(pos position);
+    ~Entity();
     void tick();
 };
 
-class player : entity
+class player : Entity
 {
 private:
     /* data */

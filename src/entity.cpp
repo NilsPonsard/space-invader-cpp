@@ -1,5 +1,5 @@
 #include <entity.h>
-#include <gameUtils.h>
+
 Object::Object(pos position)
 {
     Object::position = position;
@@ -8,11 +8,18 @@ Object::Object(pos position)
 Object::~Object()
 {
 }
-entity::entity()
+
+void Object::show()
+{
+    GotoXY(Object::position.x, Object::position.y);
+    std::cout << KBlock << std::endl;
+}
+
+Entity::Entity()
 {
 }
 
-entity::~entity()
+Entity::~Entity()
 {
 }
 
