@@ -11,10 +11,14 @@
 #include <chrono>
 
 #include <iomanip>
+#include <entity.h>
 
 #define WIDTH 50
 #define HEIGHT 100
+
 using namespace std;
+
+const string KBlock("██");
 const string KReset("0");
 const string KNoir("30");
 const string KRouge("31");
@@ -44,7 +48,7 @@ struct pos
 void set_input_mode(void)
 {
   struct termios tattr;
-  char *name;
+  //char *name;
 
   /* Make sure stdin is a terminal. */
   if (!isatty(STDIN_FILENO))
@@ -75,171 +79,59 @@ void ClearScreen()
   cout << "\033[H\033[2J";
 }
 
-void drawSnake(vector<pos> &tail)
+void boucle()
 {
-  unsigned i(0);
-  for (auto iter(tail.begin()); iter < tail.end(); ++iter)
-  {
-    ++i;
-    if (iter == tail.begin())
-      Couleur(KJaune);
-    else
-      Couleur(KVert);
-
-    GotoXY((*iter).x, (*iter).y);
-    cout << "██" << endl;
-  }
-}
-
-void drawArena(const pos &apple)
-{
-  GotoXY(1, 1);
-  cout << "┌" << endl;
-  GotoXY(1, HEIGHT);
-  cout << "┐" << endl;
-  for (unsigned x(2); x < WIDTH; ++x)
-  {
-    GotoXY(x, 1);
-    cout << "│" << endl;
-    GotoXY(x, HEIGHT);
-    cout << "│" << endl;
-  }
-  GotoXY(WIDTH, 1);
-  cout << "└" << endl;
-  GotoXY(WIDTH, HEIGHT);
-  cout << "┘" << endl;
-  for (unsigned y(2); y < HEIGHT; ++y)
-  {
-    GotoXY(1, y);
-    cout << "─" << endl;
-    GotoXY(WIDTH, y);
-    cout << "─" << endl;
-  }
-  GotoXY(apple.x, apple.y);
-  Couleur(KRouge);
-  cout << "██" << endl;
-}
-void dead(vector<pos> &tail)
-{
-  ClearScreen();
-  Couleur(KReset);
-  cout << "vous avez perdu, score : " << tail.size() << endl;
-  exit(0);
-}
-
-void updateSnake(vector<pos> &tail, const unsigned &direction, pos &apple)
-{
-
-  if (tail[0].x == apple.x && tail[0].y == apple.y)
-  {
-    tail.push_back({0, 0});
-    unsigned x;
-    unsigned y;
-    x = (rand() % (WIDTH - 2) + 2) / 2;
-    y = (rand() % (HEIGHT - 2) + 2) / 2;
-    apple = {x * 2, y * 2};
-  }
-
-  cout << tail.size() << endl;
-  for (unsigned i(tail.size() - 1); i > 0; --i)
-  {
-    tail[i] = tail[i - 1];
-  }
-  switch (direction)
-  {
-  case 0:
-    tail[0].x -= 1;
-    break;
-  case 1:
-    tail[0].y += 2;
-    break;
-  case 2:
-    tail[0].x += 1;
-    break;
-  case 3:
-    tail[0].y -= 2;
-    break;
-  default:
-    break;
-  }
-  if (tail[0].x < 2 || tail[0].x > WIDTH - 2)
-    dead(tail);
-  if (tail[0].y < 2 || tail[0].y > HEIGHT - 2)
-    dead(tail);
-  for (auto iter(tail.begin() + 3); iter < tail.end(); ++iter)
-  {
-    if ((*iter).x == tail[0].x && (*iter).y == tail[0].y)
-      dead(tail);
-  }
-}
-
-int main()
-{
-  srand(time(NULL));
-  char c;
-  double seconds(0);
+  char c = '_';
   auto timer = chrono::steady_clock::now();
-  set_input_mode();
-  Couleur(KRouge);
-  cout << "Rouge" << endl;
-  Couleur(KVert);
-  cout << "Vert" << endl;
-  Couleur(KReset);
-  cout << "Retour à la normale" << endl;
-  pos apple({8, 8});
-  vector<pos> tail;
-  tail.push_back({6, 4});
-  tail.push_back({6, 6});
-  tail.push_back({6, 8});
-  tail.push_back({6, 10});
 
-  unsigned dir(1);
-  unsigned tempdir(1);
-  while (1)
+  while (true)
   {
     timer = chrono::steady_clock::now();
-    drawArena(apple);
-    updateSnake(tail, dir, apple);
-    drawSnake(tail);
-    tempdir = dir;
+    /*
+     * Affichage des éléments
+     */
     while (chrono::duration_cast<chrono::milliseconds>(chrono::steady_clock::now() - timer).count() < 100)
     {
-      //Couleur(KReset);
+      /*
+       * commandes
+       */
+
       c = '_';
       read(STDIN_FILENO, &c, 1);
-      //cout << c << endl;
       if (c == '\004') /* C-d */
         break;
-      //GotoXY(0, 0);
-
       switch (c)
       {
+      case ' ':
+        cout << "espace" << endl;
+        break;
       case 'A':
-        if (dir != 2)
-          tempdir = 0;
+        cout << "Haut" << endl;
         break;
       case 'C':
-        if (dir != 3)
-
-          tempdir = 1;
+        cout << "Droite" << endl;
         break;
       case 'B':
-        if (dir != 0)
-          tempdir = 2;
+        cout << "Bas" << endl;
         break;
       case 'D':
-        if (dir != 1)
-          tempdir = 3;
+        cout << "Gauche" << endl;
         break;
       default:
         break;
       }
       //cout << chrono::duration_cast<chrono::milliseconds>(chrono::steady_clock::now() - timer).count() << endl;
     }
-    dir = tempdir;
 
     ClearScreen();
   }
+}
+
+int main()
+{
+  srand(time(NULL));
+  set_input_mode();
+  boucle();
 
   return EXIT_SUCCESS;
 }
