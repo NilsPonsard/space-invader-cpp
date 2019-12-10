@@ -1,8 +1,9 @@
 #include <entity.h>
 
-Object::Object(pos position)
+Object::Object(pos position, Vstring texture)
 {
     Object::position = position;
+    Object::texture = texture;
 }
 
 Object::~Object()
@@ -15,24 +16,19 @@ void Object::show()
     std::cout << KBlock << std::endl;
 }
 
-Entity::Entity()
+const Vstring playerTexture = {
+    "    ██   ",
+    "██████████",
+    "██████████"
+
+};
+
+Player::Player(pos p)
 {
+    Object(p, playerTexture);
 }
 
-Entity::~Entity()
+void Player::tick()
 {
-}
-
-player::player(/* args */)
-{
-}
-
-player::~player()
-{
-}
-void player::show()
-{
-}
-void player::tick()
-{
+    if (Player::Object::position.x + Player::speed)
 }

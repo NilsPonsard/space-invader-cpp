@@ -9,31 +9,31 @@ typedef std::vector<std::string> Vstring;
 class Object
 {
 private:
-    pos position;
+    Vstring texture;
 
 public:
-    Object(pos position);
+    pos position;
+    Object(pos position, Vstring texture);
     ~Object();
     void show();
 };
 
-class Entity : Object
+class Player : public Object
 {
 private:
 public:
-    Entity(pos position);
-    ~Entity();
+    unsigned direction;
+    int speed;
+    Player(pos p);
+    ~Player();
     void tick();
 };
 
-class player : Entity
+class Alien1 : public Object
 {
 private:
-    /* data */
 public:
-    player();
-    ~player();
-    void show();
-    void tick();
+    Alien1(pos p);
+    ~Alien1();
 };
 #endif

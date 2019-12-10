@@ -10,6 +10,9 @@
 #ifndef GUTILS_H
 #define GUTILS_H
 
+#define MAX_X 100
+#define MAX_Y 50
+
 const std::string KBlock("██");
 const std::string KReset("0");
 const std::string KNoir("30");
