@@ -31,4 +31,6 @@ Player::Player(pos p)
 void Player::tick()
 {
     if (Player::Object::position.x + Player::speed)
+    {
+    }
 }

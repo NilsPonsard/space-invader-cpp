@@ -21,7 +21,7 @@ using namespace std;
 
 void boucle()
 {
-  Object test({6, 6});
+  Player test({6, 6});
   char c = '_';
   auto timer = chrono::steady_clock::now();
 
