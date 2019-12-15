@@ -1,0 +1,4580 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment My Project }My Project}
+{\comment Generated by doxygen.}
+{\creatim \yr2019\mo12\dy15\hr18\min1\sec52}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt My Project}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version \par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Sun Dec 15 2019 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Index\par \pard\plain 
+{\tc \v Namespace Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Namespace List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all namespaces with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b nsUtil} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Hierarchical Index\par \pard\plain 
+{\tc \v Hierarchical Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class Hierarchy\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This inheritance list is sorted roughly, but not completely, alphabetically:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+exception
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+nsUtil::CException\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAIO \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+myexception\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+PixelException\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+font\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+nsUtil::IEditable\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAIX \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+nsUtil::CException\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAIO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+RGBcolor\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+IminGlInjectable\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEO \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+baseFig\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACV \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+circle\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+figure\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+line\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+rectangle\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGW \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+triangle\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+}\par
+minGL\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+minglString\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+pixel\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+pos\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+position\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Index\par \pard\plain 
+{\tc \v Class Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the classes, structs, unions and interfaces with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b baseFig} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b nsUtil::CException} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAIO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b circle} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b figure} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b font} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b nsUtil::IEditable} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAIX \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b IminGlInjectable} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b line} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b minGL} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b minglString} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b myexception} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b pixel} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b PixelException} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b pos} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b position} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b rectangle} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGW \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b RGBcolor} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b triangle} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all files with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b src/{\b main.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b _circle.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b _circle.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b basefig.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b basefig.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b circle.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b circle.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b figure.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b figure.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b line.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b line.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b minglstring.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b minglstring.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b pos.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b rectangle.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b rectangle.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b triangle.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/figs/{\b triangle.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/graph/{\b iminglinjectable.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAW \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/graph/{\b iminglinjectable.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAX \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/graph/{\b libgraphique_fonts.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/graph/{\b mingl.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/graph/{\b mingl.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/graph/{\b pos.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/graph/{\b rgbcolor.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/graph/{\b rgbcolor.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/tools/{\b CException.cxx} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe CException })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/tools/{\b CException.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Declaration de la classe CException })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/tools/{\b CException.hxx} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe CException })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/tools/{\b CstCodErr.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Codes d'erreurs })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/tools/{\b IEditable.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/tools/{\b IEditable.hxx} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/tools/{\b myexception.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/tools/{\b myexception.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/tools/{\b pixel.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/tools/{\b pixel.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/tools/{\b pixelexception.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/tools/{\b pixelexception.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/tools/{\b tools.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/tools/{\b tools.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Documentation\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+nsUtil Namespace Reference\par \pard\plain 
+{\tc\tcl2 \v nsUtil}
+{\xe \v nsUtil}
+{\bkmkstart AAAAAAAAHV}
+{\bkmkend AAAAAAAAHV}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b CException}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b IEditable}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Enumerations\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum \{ {\b KNoExc} = 0, 
+{\b KNoError} = 0, 
+{\b kColorOutOfBounds} = 100, 
+{\b KErrNoFile} = 252, 
+{\b KErrArg} = 253, 
+{\b KExcStd} = 254, 
+{\b kExcInconnue} = -1, 
+{\b kErrTooHight} = 300, 
+{\b kErrTooRight} = 301, 
+{\b kErrFontSize} = 302, 
+{\b kNoTriangle} = 303, 
+{\b kNoLine} = 304, 
+{\b kNoRectangle} = 305, 
+{\b kNoCircle} = 306, 
+{\b kTypeNotFound} = 307
+ \}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::ostream & {\b operator<<} (std::ostream &os, const {\b IEditable} &Obj)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const std::map< unsigned, std::string > {\b kError}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Enumeration Type Documentation\par
+\pard\plain 
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+anonymous enum}}
+\par
+{\bkmkstart AAAAAAAAHW}
+{\bkmkend AAAAAAAAHW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v KNoExc\:nsUtil}
+{\xe \v nsUtil\:KNoExc}
+{\qr KNoExc{\bkmkstart AAAAAAAAHX}
+{\bkmkend AAAAAAAAHX}
+\cell }{\cell }{\row }
+{\xe \v KNoError\:nsUtil}
+{\xe \v nsUtil\:KNoError}
+{\qr KNoError{\bkmkstart AAAAAAAAHY}
+{\bkmkend AAAAAAAAHY}
+\cell }{\cell }{\row }
+{\xe \v kColorOutOfBounds\:nsUtil}
+{\xe \v nsUtil\:kColorOutOfBounds}
+{\qr kColorOutOfBounds{\bkmkstart AAAAAAAAHZ}
+{\bkmkend AAAAAAAAHZ}
+\cell }{\cell }{\row }
+{\xe \v KErrNoFile\:nsUtil}
+{\xe \v nsUtil\:KErrNoFile}
+{\qr KErrNoFile{\bkmkstart AAAAAAAAIA}
+{\bkmkend AAAAAAAAIA}
+\cell }{\cell }{\row }
+{\xe \v KErrArg\:nsUtil}
+{\xe \v nsUtil\:KErrArg}
+{\qr KErrArg{\bkmkstart AAAAAAAAIB}
+{\bkmkend AAAAAAAAIB}
+\cell }{\cell }{\row }
+{\xe \v KExcStd\:nsUtil}
+{\xe \v nsUtil\:KExcStd}
+{\qr KExcStd{\bkmkstart AAAAAAAAIC}
+{\bkmkend AAAAAAAAIC}
+\cell }{\cell }{\row }
+{\xe \v kExcInconnue\:nsUtil}
+{\xe \v nsUtil\:kExcInconnue}
+{\qr kExcInconnue{\bkmkstart AAAAAAAAID}
+{\bkmkend AAAAAAAAID}
+\cell }{\cell }{\row }
+{\xe \v kErrTooHight\:nsUtil}
+{\xe \v nsUtil\:kErrTooHight}
+{\qr kErrTooHight{\bkmkstart AAAAAAAAIE}
+{\bkmkend AAAAAAAAIE}
+\cell }{\cell }{\row }
+{\xe \v kErrTooRight\:nsUtil}
+{\xe \v nsUtil\:kErrTooRight}
+{\qr kErrTooRight{\bkmkstart AAAAAAAAIF}
+{\bkmkend AAAAAAAAIF}
+\cell }{\cell }{\row }
+{\xe \v kErrFontSize\:nsUtil}
+{\xe \v nsUtil\:kErrFontSize}
+{\qr kErrFontSize{\bkmkstart AAAAAAAAIG}
+{\bkmkend AAAAAAAAIG}
+\cell }{\cell }{\row }
+{\xe \v kNoTriangle\:nsUtil}
+{\xe \v nsUtil\:kNoTriangle}
+{\qr kNoTriangle{\bkmkstart AAAAAAAAIH}
+{\bkmkend AAAAAAAAIH}
+\cell }{\cell }{\row }
+{\xe \v kNoLine\:nsUtil}
+{\xe \v nsUtil\:kNoLine}
+{\qr kNoLine{\bkmkstart AAAAAAAAII}
+{\bkmkend AAAAAAAAII}
+\cell }{\cell }{\row }
+{\xe \v kNoRectangle\:nsUtil}
+{\xe \v nsUtil\:kNoRectangle}
+{\qr kNoRectangle{\bkmkstart AAAAAAAAIJ}
+{\bkmkend AAAAAAAAIJ}
+\cell }{\cell }{\row }
+{\xe \v kNoCircle\:nsUtil}
+{\xe \v nsUtil\:kNoCircle}
+{\qr kNoCircle{\bkmkstart AAAAAAAAIK}
+{\bkmkend AAAAAAAAIK}
+\cell }{\cell }{\row }
+{\xe \v kTypeNotFound\:nsUtil}
+{\xe \v nsUtil\:kTypeNotFound}
+{\qr kTypeNotFound{\bkmkstart AAAAAAAAIL}
+{\bkmkend AAAAAAAAIL}
+\cell }{\cell }{\row }
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v operator<<\:nsUtil}
+{\xe \v nsUtil\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::ostream & nsUtil::operator<< (std::ostream &  {\i os}, const {\b IEditable} &  {\i Obj}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAIM}
+{\bkmkend AAAAAAAAIM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variable Documentation\par
+\pard\plain 
+{\xe \v kError\:nsUtil}
+{\xe \v nsUtil\:kError}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const std::map<unsigned, std::string> nsUtil::kError}}
+\par
+{\bkmkstart AAAAAAAAIN}
+{\bkmkend AAAAAAAAIN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\b Initial value:}{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \{\par
+        \{kErrTooHight, {\cf22 "trop haut"}\},\par
+        \{kErrTooRight, {\cf22 "trop \'E0 droite"}\},\par
+        \{kErrFontSize, {\cf22 "taille de police pas bonne"}\},\par
+        \{kNoTriangle, {\cf22 "pas le bon nombre de pts pour la construction du triangle"}\},\par
+        \{kNoLine, {\cf22 "pas le bon nombre de pts pour la construction d'une ligne"}\},\par
+        \{kNoRectangle, {\cf22 "pas le bon nombre de pts pour la construction d'un rectangle"}\},\par
+        \{kNoCircle, {\cf22 "pas le bon nombre de pts pour la construction d'un cercle"}\},\par
+        \{kTypeNotFound, {\cf22 "instanciation impossible : pas le bon type"}\},\par
+    \}\par
+}
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Documentation{\tc \v Class Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+baseFig Class Reference\par \pard\plain 
+{\tc\tcl2 \v baseFig}
+{\xe \v baseFig}
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+\par
+{
+{\f2 #include <basefig.h>}}\par
+Inheritance diagram for baseFig:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classbase_fig.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b baseFig} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~baseFig} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b baseFig} {\b operator+} (const {\b pos} &pos_) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b baseFig} {\b operator*} (const float &f) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b getName} () const\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::map< std::string, {\b pos} > {\b remarkablePt}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RGBcolor} {\b borderColor}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RGBcolor} {\b inColor}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b name}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual {\b minGL} & {\b _Edit} ({\b minGL} &Window) const  throw (myexception)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b baseFig} (const std::map< std::string, {\b pos} > &, const {\b RGBcolor} &, const {\b RGBcolor} &)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b baseFig} {\b operator+} (const {\b pos} &, const {\b baseFig} &)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b baseFig} {\b operator*} (const float &f, const {\b baseFig} &)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v baseFig\:baseFig}
+{\xe \v baseFig\:baseFig}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+baseFig::baseFig (const std::map< std::string, {\b pos} > & , const {\b RGBcolor} & , const {\b RGBcolor} & ){\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v baseFig\:baseFig}
+{\xe \v baseFig\:baseFig}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+baseFig::baseFig ()}}
+\par
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~baseFig\:baseFig}
+{\xe \v baseFig\:~baseFig}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+baseFig::~baseFig (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v _Edit\:baseFig}
+{\xe \v baseFig\:_Edit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual {\b minGL}& baseFig::_Edit ({\b minGL} &  {\i Window}) const throw ( {\b myexception}) {\f2 [inline]}, {\f2 [protected]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implements {\b IminGlInjectable} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAADA \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+{
+Reimplemented in {\b figure} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAADB \\*MERGEFORMAT}{\fldrslt pagenum}}}), {\b triangle} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAADC \\*MERGEFORMAT}{\fldrslt pagenum}}}), {\b circle} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAADD \\*MERGEFORMAT}{\fldrslt pagenum}}}), {\b line} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAADE \\*MERGEFORMAT}{\fldrslt pagenum}}}), and {\b rectangle} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAADF \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\xe \v getName\:baseFig}
+{\xe \v baseFig\:getName}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string baseFig::getName () const}}
+\par
+{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator*\:baseFig}
+{\xe \v baseFig\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b baseFig} baseFig::operator* (const float &  {\i f}) const}}
+\par
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:baseFig}
+{\xe \v baseFig\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b baseFig} baseFig::operator+ (const {\b pos} &  {\i pos_}) const}}
+\par
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends And Related Function Documentation\par
+\pard\plain 
+{\xe \v operator*\:baseFig}
+{\xe \v baseFig\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b baseFig} operator* (const float &  {\i f}, const {\b baseFig} &  {\i B}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:baseFig}
+{\xe \v baseFig\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b baseFig} operator+ (const {\b pos} &  {\i pos_}, const {\b baseFig} &  {\i B}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v borderColor\:baseFig}
+{\xe \v baseFig\:borderColor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b RGBcolor} baseFig::borderColor}}
+\par
+{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v inColor\:baseFig}
+{\xe \v baseFig\:inColor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b RGBcolor} baseFig::inColor}}
+\par
+{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v name\:baseFig}
+{\xe \v baseFig\:name}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string baseFig::name}}
+\par
+{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v remarkablePt\:baseFig}
+{\xe \v baseFig\:remarkablePt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::map<std::string, {\b pos}> baseFig::remarkablePt}}
+\par
+{\bkmkstart AAAAAAAADO}
+{\bkmkend AAAAAAAADO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b basefig.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b basefig.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+nsUtil::CException Class Reference\par \pard\plain 
+{\tc\tcl2 \v nsUtil::CException}
+{\xe \v nsUtil::CException}
+{\bkmkstart AAAAAAAAIO}
+{\bkmkend AAAAAAAAIO}
+\par
+{
+{\f2 #include <CException.h>}}\par
+Inheritance diagram for nsUtil::CException:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classns_util_1_1_c_exception.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b CException} (const std::string &Libelle=std::string(), const unsigned CodErr={\b KNoExc})  throw ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual {\b ~CException} (void)  throw ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const std::string & {\b GetLibelle} (void) const  throw ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned {\b GetCodErr} (void) const  throw ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual const char * {\b what} () const  throw ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual std::ostream & {\b _Edit} (std::ostream &os=std::cerr) const\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b m_Libelle}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned {\b m_CodErr}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v CException\:nsUtil::CException}
+{\xe \v nsUtil::CException\:CException}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+nsUtil::CException::CException (const std::string &  {\i Libelle} = {\f2 std::string()}, const unsigned  {\i CodErr} = {\f2 {\b KNoExc}}) throw ( ) }}
+\par
+{\bkmkstart AAAAAAAAIP}
+{\bkmkend AAAAAAAAIP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~CException\:nsUtil::CException}
+{\xe \v nsUtil::CException\:~CException}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual nsUtil::CException::~CException (void ) throw ( ) {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAAIQ}
+{\bkmkend AAAAAAAAIQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v _Edit\:nsUtil::CException}
+{\xe \v nsUtil::CException\:_Edit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ostream & nsUtil::CException::_Edit (std::ostream &  {\i os} = {\f2 std::cerr}) const{\f2 [protected]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAAIR}
+{\bkmkend AAAAAAAAIR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implements {\b nsUtil::IEditable} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHI \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\xe \v GetCodErr\:nsUtil::CException}
+{\xe \v nsUtil::CException\:GetCodErr}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned nsUtil::CException::GetCodErr (void ) const throw ( ) }}
+\par
+{\bkmkstart AAAAAAAAIS}
+{\bkmkend AAAAAAAAIS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v GetLibelle\:nsUtil::CException}
+{\xe \v nsUtil::CException\:GetLibelle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const std::string& nsUtil::CException::GetLibelle (void ) const throw ( ) }}
+\par
+{\bkmkstart AAAAAAAAIT}
+{\bkmkend AAAAAAAAIT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v what\:nsUtil::CException}
+{\xe \v nsUtil::CException\:what}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual const char* nsUtil::CException::what () const throw ( ) {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAAIU}
+{\bkmkend AAAAAAAAIU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v m_CodErr\:nsUtil::CException}
+{\xe \v nsUtil::CException\:m_CodErr}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned nsUtil::CException::m_CodErr{\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAAIV}
+{\bkmkend AAAAAAAAIV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v m_Libelle\:nsUtil::CException}
+{\xe \v nsUtil::CException\:m_Libelle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string nsUtil::CException::m_Libelle{\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAAIW}
+{\bkmkend AAAAAAAAIW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/tools/{\b CException.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/tools/{\b CException.cxx}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+circle Class Reference\par \pard\plain 
+{\tc\tcl2 \v circle}
+{\xe \v circle}
+{\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+\par
+{
+{\f2 #include <_circle.h>}}\par
+Inheritance diagram for circle:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classcircle.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b circle} (const {\b pixel} &pix, const unsigned &rad, const {\b RGBcolor} &borderCol, const {\b RGBcolor} &inCol={\b RGBcolor}())\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b circle} {\b operator+} (const {\b pixel} &pix) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b circle} {\b operator*} (const float &reductionRatio) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b circle} (const {\b pos} &pos_, const unsigned &rad, const {\b RGBcolor} &borderCol, const {\b RGBcolor} &inCol={\b RGBcolor}())\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b circle} (const {\b baseFig} &)  throw (myexception)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b circle} {\b operator+} (const {\b pos} &pos_) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b circle} {\b operator*} (const float &f) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~circle} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pixel} {\b center}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned {\b radius}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RGBcolor} {\b borderColor}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RGBcolor} {\b inColor}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual {\b minGL} & {\b _Edit} ({\b minGL} &Window) const  throw (myexception)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b circle} {\b operator+} (const {\b pos} &p, const {\b circle} &t)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b circle} {\b operator*} (const float &f, const {\b circle} &t)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v circle\:circle}
+{\xe \v circle\:circle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+circle::circle (const {\b pixel} &  {\i pix}, const unsigned &  {\i rad}, const {\b RGBcolor} &  {\i borderCol}, const {\b RGBcolor} &  {\i inCol} = {\f2 {\b RGBcolor}\~ ()})}}
+\par
+{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v circle\:circle}
+{\xe \v circle\:circle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+circle::circle (const {\b pos} &  {\i pos_}, const unsigned &  {\i rad}, const {\b RGBcolor} &  {\i borderCol}, const {\b RGBcolor} &  {\i inCol} = {\f2 {\b RGBcolor}\~ ()})}}
+\par
+{\bkmkstart AAAAAAAADR}
+{\bkmkend AAAAAAAADR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v circle\:circle}
+{\xe \v circle\:circle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+circle::circle (const {\b baseFig} &  {\i b}) throw ( {\b myexception}) }}
+\par
+{\bkmkstart AAAAAAAADS}
+{\bkmkend AAAAAAAADS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~circle\:circle}
+{\xe \v circle\:~circle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+circle::~circle (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v _Edit\:circle}
+{\xe \v circle\:_Edit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b minGL} & circle::_Edit ({\b minGL} &  {\i Window}) const throw ( {\b myexception}) {\f2 [protected]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Reimplemented from {\b baseFig} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAACZ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\xe \v operator*\:circle}
+{\xe \v circle\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b circle} circle::operator* (const float &  {\i f}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADU}
+{\bkmkend AAAAAAAADU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator*\:circle}
+{\xe \v circle\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b circle} circle::operator* (const float &  {\i reductionRatio}) const}}
+\par
+{\bkmkstart AAAAAAAADV}
+{\bkmkend AAAAAAAADV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:circle}
+{\xe \v circle\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b circle} circle::operator+ (const {\b pixel} &  {\i pix}) const}}
+\par
+{\bkmkstart AAAAAAAADW}
+{\bkmkend AAAAAAAADW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:circle}
+{\xe \v circle\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b circle} circle::operator+ (const {\b pos} &  {\i pos_}) const}}
+\par
+{\bkmkstart AAAAAAAADX}
+{\bkmkend AAAAAAAADX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends And Related Function Documentation\par
+\pard\plain 
+{\xe \v operator*\:circle}
+{\xe \v circle\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b circle} operator* (const float &  {\i f}, const {\b circle} &  {\i t}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAADY}
+{\bkmkend AAAAAAAADY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:circle}
+{\xe \v circle\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b circle} operator+ (const {\b pos} &  {\i p}, const {\b circle} &  {\i t}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAADZ}
+{\bkmkend AAAAAAAADZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v borderColor\:circle}
+{\xe \v circle\:borderColor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b RGBcolor} circle::borderColor}}
+\par
+{\bkmkstart AAAAAAAAEA}
+{\bkmkend AAAAAAAAEA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v center\:circle}
+{\xe \v circle\:center}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b pixel} circle::center}}
+\par
+{\bkmkstart AAAAAAAAEB}
+{\bkmkend AAAAAAAAEB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v inColor\:circle}
+{\xe \v circle\:inColor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b RGBcolor} circle::inColor}}
+\par
+{\bkmkstart AAAAAAAAEC}
+{\bkmkend AAAAAAAAEC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v radius\:circle}
+{\xe \v circle\:radius}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned circle::radius}}
+\par
+{\bkmkstart AAAAAAAAED}
+{\bkmkend AAAAAAAAED}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b _circle.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b circle.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b _circle.cpp}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b circle.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+figure Class Reference\par \pard\plain 
+{\tc\tcl2 \v figure}
+{\xe \v figure}
+{\bkmkstart AAAAAAAAEE}
+{\bkmkend AAAAAAAAEE}
+\par
+{
+{\f2 #include <figure.h>}}\par
+Inheritance diagram for figure:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfigure.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T , typename  = typename std::enable_if<std::is_base_of<baseFig, T>::value>::type> void {\b Add} (const T &Val)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b figure} {\b operator+} (const {\b pos} &pos_) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b figure} {\b operator*} (const float &f) const\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual {\b minGL} & {\b _Edit} ({\b minGL} &Window) const  throw (myexception)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::vector< std::shared_ptr< {\b baseFig} > > {\b vFig}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b figure} {\b operator+} (const {\b pos} &p, const {\b figure} &f)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b figure} {\b operator*} (const float &f, const {\b figure} &fig)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Additional Inherited Members\par
+\pard\plain 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v _Edit\:figure}
+{\xe \v figure\:_Edit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b minGL} & figure::_Edit ({\b minGL} &  {\i Window}) const throw ( {\b myexception}) {\f2 [protected]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Reimplemented from {\b baseFig} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAACZ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\xe \v Add\:figure}
+{\xe \v figure\:Add}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T , typename  = typename std::enable_if<std::is_base_of<baseFig, T>::value>::type> void figure::Add (const T &  {\i Val}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEF}
+{\bkmkend AAAAAAAAEF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator*\:figure}
+{\xe \v figure\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b figure} figure::operator* (const float &  {\i f}) const}}
+\par
+{\bkmkstart AAAAAAAAEG}
+{\bkmkend AAAAAAAAEG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:figure}
+{\xe \v figure\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b figure} figure::operator+ (const {\b pos} &  {\i pos_}) const}}
+\par
+{\bkmkstart AAAAAAAAEH}
+{\bkmkend AAAAAAAAEH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends And Related Function Documentation\par
+\pard\plain 
+{\xe \v operator*\:figure}
+{\xe \v figure\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b figure} operator* (const float &  {\i f}, const {\b figure} &  {\i fig}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAAEI}
+{\bkmkend AAAAAAAAEI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:figure}
+{\xe \v figure\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b figure} operator+ (const {\b pos} &  {\i p}, const {\b figure} &  {\i f}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAAEJ}
+{\bkmkend AAAAAAAAEJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v vFig\:figure}
+{\xe \v figure\:vFig}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::vector<std::shared_ptr<{\b baseFig}> > figure::vFig{\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAAEK}
+{\bkmkend AAAAAAAAEK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b figure.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b figure.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+font Struct Reference\par \pard\plain 
+{\tc\tcl2 \v font}
+{\xe \v font}
+{\bkmkstart AAAAAAAAEL}
+{\bkmkend AAAAAAAAEL}
+\par
+{
+{\f2 #include <libgraphique_fonts.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b height}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const GLubyte ** {\b faces}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v faces\:font}
+{\xe \v font\:faces}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const GLubyte** font::faces}}
+\par
+{\bkmkstart AAAAAAAAEM}
+{\bkmkend AAAAAAAAEM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v height\:font}
+{\xe \v font\:height}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int font::height}}
+\par
+{\bkmkstart AAAAAAAAEN}
+{\bkmkend AAAAAAAAEN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/graph/{\b libgraphique_fonts.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+nsUtil::IEditable Class Reference\par \pard\plain 
+{\tc\tcl2 \v nsUtil::IEditable}
+{\xe \v nsUtil::IEditable}
+{\bkmkstart AAAAAAAAIX}
+{\bkmkend AAAAAAAAIX}
+\par
+{
+{\f2 #include <IEditable.h>}}\par
+Inheritance diagram for nsUtil::IEditable:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classns_util_1_1_i_editable.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual std::ostream & {\b _Edit} (std::ostream &os) const =0\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::ostream & {\b operator<<} (std::ostream &os, const {\b IEditable} &Obj)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v _Edit\:nsUtil::IEditable}
+{\xe \v nsUtil::IEditable\:_Edit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual std::ostream& nsUtil::IEditable::_Edit (std::ostream &  {\i os}) const{\f2 [protected]}, {\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAAAHI}
+{\bkmkend AAAAAAAAHI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\b RGBcolor} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHH \\*MERGEFORMAT}{\fldrslt pagenum}}}), and {\b nsUtil::CException} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAIR \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends And Related Function Documentation\par
+\pard\plain 
+{\xe \v operator<<\:nsUtil::IEditable}
+{\xe \v nsUtil::IEditable\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::ostream& operator<< (std::ostream &  {\i os}, const {\b IEditable} &  {\i Obj}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAAIY}
+{\bkmkend AAAAAAAAIY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/tools/{\b IEditable.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+IminGlInjectable Class Reference\par \pard\plain 
+{\tc\tcl2 \v IminGlInjectable}
+{\xe \v IminGlInjectable}
+{\bkmkstart AAAAAAAAEO}
+{\bkmkend AAAAAAAAEO}
+\par
+{
+{\f2 #include <iminglinjectable.h>}}\par
+Inheritance diagram for IminGlInjectable:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_imin_gl_injectable.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual {\b minGL} & {\b _Edit} ({\b minGL} &Window) const =0  throw (myexception)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b minGL} & {\b operator<<} ({\b minGL} &Window, const {\b IminGlInjectable} &Obj)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v _Edit\:IminGlInjectable}
+{\xe \v IminGlInjectable\:_Edit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual {\b minGL}& IminGlInjectable::_Edit ({\b minGL} &  {\i Window}) const throw ( {\b myexception}) {\f2 [protected]}, {\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\b baseFig} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAACZ \\*MERGEFORMAT}{\fldrslt pagenum}}}), {\b figure} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAADB \\*MERGEFORMAT}{\fldrslt pagenum}}}), {\b triangle} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAADC \\*MERGEFORMAT}{\fldrslt pagenum}}}), {\b circle} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAADD \\*MERGEFORMAT}{\fldrslt pagenum}}}), {\b line} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAADE \\*MERGEFORMAT}{\fldrslt pagenum}}}), and {\b rectangle} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAADF \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends And Related Function Documentation\par
+\pard\plain 
+{\xe \v operator<<\:IminGlInjectable}
+{\xe \v IminGlInjectable\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b minGL}& operator<< ({\b minGL} &  {\i Window}, const {\b IminGlInjectable} &  {\i Obj}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAAEP}
+{\bkmkend AAAAAAAAEP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/graph/{\b iminglinjectable.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+line Class Reference\par \pard\plain 
+{\tc\tcl2 \v line}
+{\xe \v line}
+{\bkmkstart AAAAAAAAEQ}
+{\bkmkend AAAAAAAAEQ}
+\par
+{
+{\f2 #include <line.h>}}\par
+Inheritance diagram for line:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classline.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b line} (const {\b pos} &pix1, const {\b pos} &pix2, const {\b RGBcolor} &fillCol={\b RGBcolor}())\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b line} (const {\b baseFig} &)  throw (myexception)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b line} {\b operator+} (const {\b pos} &pos_) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b line} {\b operator*} (const float &f) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~line} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual {\b minGL} & {\b _Edit} ({\b minGL} &Window) const  throw (myexception)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b line} {\b operator+} (const {\b pos} &p, const {\b line} &t)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b line} {\b operator*} (const float &f, const {\b line} &t)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Additional Inherited Members\par
+\pard\plain 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v line\:line}
+{\xe \v line\:line}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+line::line (const {\b pos} &  {\i pix1}, const {\b pos} &  {\i pix2}, const {\b RGBcolor} &  {\i fillCol} = {\f2 {\b RGBcolor}\~ ()})}}
+\par
+{\bkmkstart AAAAAAAAER}
+{\bkmkend AAAAAAAAER}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v line\:line}
+{\xe \v line\:line}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+line::line (const {\b baseFig} &  {\i b}) throw ( {\b myexception}) }}
+\par
+{\bkmkstart AAAAAAAAES}
+{\bkmkend AAAAAAAAES}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~line\:line}
+{\xe \v line\:~line}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+line::~line (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAET}
+{\bkmkend AAAAAAAAET}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v _Edit\:line}
+{\xe \v line\:_Edit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b minGL} & line::_Edit ({\b minGL} &  {\i Window}) const throw ( {\b myexception}) {\f2 [protected]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Reimplemented from {\b baseFig} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAACZ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\xe \v operator*\:line}
+{\xe \v line\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b line} line::operator* (const float &  {\i f}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEU}
+{\bkmkend AAAAAAAAEU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:line}
+{\xe \v line\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b line} line::operator+ (const {\b pos} &  {\i pos_}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEV}
+{\bkmkend AAAAAAAAEV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends And Related Function Documentation\par
+\pard\plain 
+{\xe \v operator*\:line}
+{\xe \v line\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b line} operator* (const float &  {\i f}, const {\b line} &  {\i t}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAAEW}
+{\bkmkend AAAAAAAAEW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:line}
+{\xe \v line\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b line} operator+ (const {\b pos} &  {\i p}, const {\b line} &  {\i t}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAAEX}
+{\bkmkend AAAAAAAAEX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b line.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b line.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+minGL Class Reference\par \pard\plain 
+{\tc\tcl2 \v minGL}
+{\xe \v minGL}
+{\bkmkstart AAAAAAAAEY}
+{\bkmkend AAAAAAAAEY}
+\par
+{
+{\f2 #include <mingl.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b initGraphic} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b stopGaphic} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b minGL} (const unsigned &Width=640, const unsigned &Height=480, const std::string &Name=std::string())\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~minGL} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b updateGraphic} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b clearScreen} ()  throw (myexception)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b setPixel} (const {\b pos} &pos_, const {\b RGBcolor} &col)  throw (PixelException)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b keyType} {\b get_key} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b keyType} {\b get_key2} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned {\b getWindowWidth} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned {\b getWindowHeight} () const\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\b initGlut} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v minGL\:minGL}
+{\xe \v minGL\:minGL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+minGL::minGL (const unsigned &  {\i Width} = {\f2 640}, const unsigned &  {\i Height} = {\f2 480}, const std::string &  {\i Name} = {\f2 std::string()})}}
+\par
+{\bkmkstart AAAAAAAAEZ}
+{\bkmkend AAAAAAAAEZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~minGL\:minGL}
+{\xe \v minGL\:~minGL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+minGL::~minGL ()}}
+\par
+{\bkmkstart AAAAAAAAFA}
+{\bkmkend AAAAAAAAFA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v clearScreen\:minGL}
+{\xe \v minGL\:clearScreen}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void minGL::clearScreen () throw ( {\b myexception}) }}
+\par
+{\bkmkstart AAAAAAAAFB}
+{\bkmkend AAAAAAAAFB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v get_key\:minGL}
+{\xe \v minGL\:get_key}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b keyType} minGL::get_key ()}}
+\par
+{\bkmkstart AAAAAAAAFC}
+{\bkmkend AAAAAAAAFC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v get_key2\:minGL}
+{\xe \v minGL\:get_key2}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b keyType} minGL::get_key2 ()}}
+\par
+{\bkmkstart AAAAAAAAFD}
+{\bkmkend AAAAAAAAFD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v getWindowHeight\:minGL}
+{\xe \v minGL\:getWindowHeight}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned minGL::getWindowHeight () const}}
+\par
+{\bkmkstart AAAAAAAAFE}
+{\bkmkend AAAAAAAAFE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v getWindowWidth\:minGL}
+{\xe \v minGL\:getWindowWidth}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned minGL::getWindowWidth () const}}
+\par
+{\bkmkstart AAAAAAAAFF}
+{\bkmkend AAAAAAAAFF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v initGlut\:minGL}
+{\xe \v minGL\:initGlut}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void minGL::initGlut (){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAFG}
+{\bkmkend AAAAAAAAFG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v initGraphic\:minGL}
+{\xe \v minGL\:initGraphic}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void minGL::initGraphic ()}}
+\par
+{\bkmkstart AAAAAAAAFH}
+{\bkmkend AAAAAAAAFH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v setPixel\:minGL}
+{\xe \v minGL\:setPixel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void minGL::setPixel (const {\b pos} &  {\i pos_}, const {\b RGBcolor} &  {\i col}) throw ( {\b PixelException}) }}
+\par
+{\bkmkstart AAAAAAAAFI}
+{\bkmkend AAAAAAAAFI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v stopGaphic\:minGL}
+{\xe \v minGL\:stopGaphic}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void minGL::stopGaphic ()}}
+\par
+{\bkmkstart AAAAAAAAFJ}
+{\bkmkend AAAAAAAAFJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v updateGraphic\:minGL}
+{\xe \v minGL\:updateGraphic}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void minGL::updateGraphic ()}}
+\par
+{\bkmkstart AAAAAAAAFK}
+{\bkmkend AAAAAAAAFK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/graph/{\b mingl.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/graph/{\b mingl.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+minglString Class Reference\par \pard\plain 
+{\tc\tcl2 \v minglString}
+{\xe \v minglString}
+{\bkmkstart AAAAAAAAFL}
+{\bkmkend AAAAAAAAFL}
+\par
+{
+{\f2 #include <minglstring.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b minglString} (const {\b pixel} &, const std::string &)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b minglString} {\b operator+} (const {\b pixel} &pix_) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b minglString} {\b operator*} (const float &reductionRatio) const\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pixel} {\b pix}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b data}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v minglString\:minglString}
+{\xe \v minglString\:minglString}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+minglString::minglString (const {\b pixel} &  {\i pi}, const std::string &  {\i str})}}
+\par
+{\bkmkstart AAAAAAAAFM}
+{\bkmkend AAAAAAAAFM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v operator*\:minglString}
+{\xe \v minglString\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b minglString} minglString::operator* (const float &  {\i reductionRatio}) const}}
+\par
+{\bkmkstart AAAAAAAAFN}
+{\bkmkend AAAAAAAAFN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:minglString}
+{\xe \v minglString\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b minglString} minglString::operator+ (const {\b pixel} &  {\i pix_}) const}}
+\par
+{\bkmkstart AAAAAAAAFO}
+{\bkmkend AAAAAAAAFO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v data\:minglString}
+{\xe \v minglString\:data}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string minglString::data}}
+\par
+{\bkmkstart AAAAAAAAFP}
+{\bkmkend AAAAAAAAFP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v pix\:minglString}
+{\xe \v minglString\:pix}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b pixel} minglString::pix}}
+\par
+{\bkmkstart AAAAAAAAFQ}
+{\bkmkend AAAAAAAAFQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b minglstring.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b minglstring.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+myexception Class Reference\par \pard\plain 
+{\tc\tcl2 \v myexception}
+{\xe \v myexception}
+{\bkmkstart AAAAAAAAFR}
+{\bkmkend AAAAAAAAFR}
+\par
+{
+{\f2 #include <myexception.h>}}\par
+Inheritance diagram for myexception:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classmyexception.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b myexception} (const unsigned &code)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Additional Inherited Members\par
+\pard\plain 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v myexception\:myexception}
+{\xe \v myexception\:myexception}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+myexception::myexception (const unsigned &  {\i code})}}
+\par
+{\bkmkstart AAAAAAAAFS}
+{\bkmkend AAAAAAAAFS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/tools/{\b myexception.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/tools/{\b myexception.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+pixel Class Reference\par \pard\plain 
+{\tc\tcl2 \v pixel}
+{\xe \v pixel}
+{\bkmkstart AAAAAAAAFT}
+{\bkmkend AAAAAAAAFT}
+\par
+{
+{\f2 #include <pixel.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pixel} (const unsigned &Abscisse=0, const unsigned &Ordonnee=0, const {\b RGBcolor} &coul={\b RGBcolor}())\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pixel} {\b operator+} (const {\b pixel} &pix) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator==} (const {\b pixel} &pix) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pixel} {\b operator*} (const float &reductionRation) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pixel} {\b operator*} (const {\b pixel} &pix) const\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned {\b abs}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned {\b ord}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RGBcolor} {\b color}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v pixel\:pixel}
+{\xe \v pixel\:pixel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+pixel::pixel (const unsigned &  {\i Abscisse} = {\f2 0}, const unsigned &  {\i Ordonnee} = {\f2 0}, const {\b RGBcolor} &  {\i coul} = {\f2 {\b RGBcolor}()})}}
+\par
+{\bkmkstart AAAAAAAAFU}
+{\bkmkend AAAAAAAAFU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v operator*\:pixel}
+{\xe \v pixel\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b pixel} pixel::operator* (const float &  {\i reductionRation}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFV}
+{\bkmkend AAAAAAAAFV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator*\:pixel}
+{\xe \v pixel\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b pixel} pixel::operator* (const {\b pixel} &  {\i pix}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFW}
+{\bkmkend AAAAAAAAFW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:pixel}
+{\xe \v pixel\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b pixel} pixel::operator+ (const {\b pixel} &  {\i pix}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFX}
+{\bkmkend AAAAAAAAFX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator==\:pixel}
+{\xe \v pixel\:operator==}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool pixel::operator== (const {\b pixel} &  {\i pix}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFY}
+{\bkmkend AAAAAAAAFY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v abs\:pixel}
+{\xe \v pixel\:abs}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned pixel::abs}}
+\par
+{\bkmkstart AAAAAAAAFZ}
+{\bkmkend AAAAAAAAFZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v color\:pixel}
+{\xe \v pixel\:color}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b RGBcolor} pixel::color}}
+\par
+{\bkmkstart AAAAAAAAGA}
+{\bkmkend AAAAAAAAGA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ord\:pixel}
+{\xe \v pixel\:ord}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned pixel::ord}}
+\par
+{\bkmkstart AAAAAAAAGB}
+{\bkmkend AAAAAAAAGB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/tools/{\b pixel.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+PixelException Class Reference\par \pard\plain 
+{\tc\tcl2 \v PixelException}
+{\xe \v PixelException}
+{\bkmkstart AAAAAAAAGC}
+{\bkmkend AAAAAAAAGC}
+\par
+{
+{\f2 #include <pixelexception.h>}}\par
+Inheritance diagram for PixelException:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_pixel_exception.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b PixelException} (const {\b pos} &pixelPosition, const {\b RGBcolor} &color, const std::string &problem)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char * {\b what} () const noexcept\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v PixelException\:PixelException}
+{\xe \v PixelException\:PixelException}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+PixelException::PixelException (const {\b pos} &  {\i pixelPosition}, const {\b RGBcolor} &  {\i color}, const std::string &  {\i problem})}}
+\par
+{\bkmkstart AAAAAAAAGD}
+{\bkmkend AAAAAAAAGD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v what\:PixelException}
+{\xe \v PixelException\:what}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char * PixelException::what () const{\f2 [noexcept]}}}
+\par
+{\bkmkstart AAAAAAAAGE}
+{\bkmkend AAAAAAAAGE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/tools/{\b pixelexception.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/tools/{\b pixelexception.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+pos Struct Reference\par \pard\plain 
+{\tc\tcl2 \v pos}
+{\xe \v pos}
+{\bkmkstart AAAAAAAAGF}
+{\bkmkend AAAAAAAAGF}
+\par
+{
+{\f2 #include <pos.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pos} (const unsigned &abs_=0, const unsigned &ord_=0)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pos} (const {\b pos} &pos_)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pos} {\b operator+} (const {\b pos} &pos_) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pos} {\b operator*} (const float &reductionRation) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator==} (const {\b pos} &pos_) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned & {\b getAbs} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned & {\b getOrd} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pos} (const unsigned &abs_=0, const unsigned &ord_=0)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pos} {\b operator+} (const {\b pos} &pos_) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator==} (const {\b pos} &pos_) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pos} {\b operator*} (const float &reductionRation) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pos} {\b operator*} (const {\b pos} &pos_) const\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static {\b pos} {\b min} (const {\b pos} &p1, const {\b pos} &p2)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\b minf} (const {\b pos} &p1, const {\b pos} &p2)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned {\b abs}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned {\b ord}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pos} {\b operator*} (const float &reductionRation, const {\b pos} &pos_)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b pos} {\b operator*} (const float &reductionRation, const {\b pos} &pos_)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v pos\:pos}
+{\xe \v pos\:pos}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+pos::pos (const unsigned &  {\i abs_} = {\f2 0}, const unsigned &  {\i ord_} = {\f2 0}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGG}
+{\bkmkend AAAAAAAAGG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v pos\:pos}
+{\xe \v pos\:pos}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+pos::pos (const {\b pos} &  {\i pos_}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGH}
+{\bkmkend AAAAAAAAGH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v pos\:pos}
+{\xe \v pos\:pos}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+pos::pos (const unsigned &  {\i abs_} = {\f2 0}, const unsigned &  {\i ord_} = {\f2 0}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGG}
+{\bkmkend AAAAAAAAGG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v getAbs\:pos}
+{\xe \v pos\:getAbs}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned& pos::getAbs (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGI}
+{\bkmkend AAAAAAAAGI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v getOrd\:pos}
+{\xe \v pos\:getOrd}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned& pos::getOrd (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGJ}
+{\bkmkend AAAAAAAAGJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v min\:pos}
+{\xe \v pos\:min}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static {\b pos} pos::min (const {\b pos} &  {\i p1}, const {\b pos} &  {\i p2}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAGK}
+{\bkmkend AAAAAAAAGK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v minf\:pos}
+{\xe \v pos\:minf}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static bool pos::minf (const {\b pos} &  {\i p1}, const {\b pos} &  {\i p2}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAGL}
+{\bkmkend AAAAAAAAGL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator*\:pos}
+{\xe \v pos\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b pos} pos::operator* (const float &  {\i reductionRation}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGM}
+{\bkmkend AAAAAAAAGM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator*\:pos}
+{\xe \v pos\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b pos} pos::operator* (const float &  {\i reductionRation}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGM}
+{\bkmkend AAAAAAAAGM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator*\:pos}
+{\xe \v pos\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b pos} pos::operator* (const {\b pos} &  {\i pos_}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGN}
+{\bkmkend AAAAAAAAGN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:pos}
+{\xe \v pos\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b pos} pos::operator+ (const {\b pos} &  {\i pos_}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGO}
+{\bkmkend AAAAAAAAGO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:pos}
+{\xe \v pos\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b pos} pos::operator+ (const {\b pos} &  {\i pos_}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGO}
+{\bkmkend AAAAAAAAGO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator==\:pos}
+{\xe \v pos\:operator==}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool pos::operator== (const {\b pos} &  {\i pos_}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGP}
+{\bkmkend AAAAAAAAGP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator==\:pos}
+{\xe \v pos\:operator==}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool pos::operator== (const {\b pos} &  {\i pos_}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGP}
+{\bkmkend AAAAAAAAGP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends And Related Function Documentation\par
+\pard\plain 
+{\xe \v operator*\:pos}
+{\xe \v pos\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b pos} operator* (const float &  {\i reductionRation}, const {\b pos} &  {\i pos_}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAAGQ}
+{\bkmkend AAAAAAAAGQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator*\:pos}
+{\xe \v pos\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b pos} operator* (const float &  {\i reductionRation}, const {\b pos} &  {\i pos_}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAAGQ}
+{\bkmkend AAAAAAAAGQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v abs\:pos}
+{\xe \v pos\:abs}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned pos::abs}}
+\par
+{\bkmkstart AAAAAAAAGR}
+{\bkmkend AAAAAAAAGR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ord\:pos}
+{\xe \v pos\:ord}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned pos::ord}}
+\par
+{\bkmkstart AAAAAAAAGS}
+{\bkmkend AAAAAAAAGS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b pos.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+position Struct Reference\par \pard\plain 
+{\tc\tcl2 \v position}
+{\xe \v position}
+{\bkmkstart AAAAAAAAGT}
+{\bkmkend AAAAAAAAGT}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b x}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b y}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v x\:position}
+{\xe \v position\:x}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int position::x}}
+\par
+{\bkmkstart AAAAAAAAGU}
+{\bkmkend AAAAAAAAGU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v y\:position}
+{\xe \v position\:y}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int position::y}}
+\par
+{\bkmkstart AAAAAAAAGV}
+{\bkmkend AAAAAAAAGV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/{\b main.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+rectangle Class Reference\par \pard\plain 
+{\tc\tcl2 \v rectangle}
+{\xe \v rectangle}
+{\bkmkstart AAAAAAAAGW}
+{\bkmkend AAAAAAAAGW}
+\par
+{
+{\f2 #include <rectangle.h>}}\par
+Inheritance diagram for rectangle:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classrectangle.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b rectangle} (const {\b pos} &pos1, const {\b pos} &pos2, const {\b RGBcolor} &borderCol, const {\b RGBcolor} &inCol={\b RGBcolor}())\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b rectangle} (const {\b pos} &{\b pos}, const unsigned &width, const unsigned &height, const {\b RGBcolor} &borderCol, const {\b RGBcolor} &inCol={\b RGBcolor}())\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b rectangle} (const {\b baseFig} &)  throw (myexception)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b rectangle} {\b operator+} (const {\b pos} &pos_) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b rectangle} {\b operator*} (const float &f) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~rectangle} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual {\b minGL} & {\b _Edit} ({\b minGL} &Window) const  throw (myexception)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b rectangle} {\b operator+} (const {\b pos} &p, const {\b rectangle} &t)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b rectangle} {\b operator*} (const float &f, const {\b rectangle} &t)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Additional Inherited Members\par
+\pard\plain 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v rectangle\:rectangle}
+{\xe \v rectangle\:rectangle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+rectangle::rectangle (const {\b pos} &  {\i pos1}, const {\b pos} &  {\i pos2}, const {\b RGBcolor} &  {\i borderCol}, const {\b RGBcolor} &  {\i inCol} = {\f2 {\b RGBcolor}\~ ()})}}
+\par
+{\bkmkstart AAAAAAAAGX}
+{\bkmkend AAAAAAAAGX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v rectangle\:rectangle}
+{\xe \v rectangle\:rectangle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+rectangle::rectangle (const {\b pos} &  {\i pos}, const unsigned &  {\i width}, const unsigned &  {\i height}, const {\b RGBcolor} &  {\i borderCol}, const {\b RGBcolor} &  {\i inCol} = {\f2 {\b RGBcolor}\~ ()})}}
+\par
+{\bkmkstart AAAAAAAAGY}
+{\bkmkend AAAAAAAAGY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v rectangle\:rectangle}
+{\xe \v rectangle\:rectangle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+rectangle::rectangle (const {\b baseFig} &  {\i b}) throw ( {\b myexception}) }}
+\par
+{\bkmkstart AAAAAAAAGZ}
+{\bkmkend AAAAAAAAGZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~rectangle\:rectangle}
+{\xe \v rectangle\:~rectangle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+rectangle::~rectangle (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHA}
+{\bkmkend AAAAAAAAHA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v _Edit\:rectangle}
+{\xe \v rectangle\:_Edit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b minGL} & rectangle::_Edit ({\b minGL} &  {\i Window}) const throw ( {\b myexception}) {\f2 [protected]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Reimplemented from {\b baseFig} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAACZ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\xe \v operator*\:rectangle}
+{\xe \v rectangle\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b rectangle} rectangle::operator* (const float &  {\i f}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHB}
+{\bkmkend AAAAAAAAHB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:rectangle}
+{\xe \v rectangle\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b rectangle} rectangle::operator+ (const {\b pos} &  {\i pos_}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHC}
+{\bkmkend AAAAAAAAHC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends And Related Function Documentation\par
+\pard\plain 
+{\xe \v operator*\:rectangle}
+{\xe \v rectangle\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b rectangle} operator* (const float &  {\i f}, const {\b rectangle} &  {\i t}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAAHD}
+{\bkmkend AAAAAAAAHD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:rectangle}
+{\xe \v rectangle\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b rectangle} operator+ (const {\b pos} &  {\i p}, const {\b rectangle} &  {\i t}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAAHE}
+{\bkmkend AAAAAAAAHE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b rectangle.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b rectangle.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+RGBcolor Class Reference\par \pard\plain 
+{\tc\tcl2 \v RGBcolor}
+{\xe \v RGBcolor}
+{\bkmkstart AAAAAAAAHF}
+{\bkmkend AAAAAAAAHF}
+\par
+{
+{\f2 #include <rgbcolor.h>}}\par
+Inheritance diagram for RGBcolor:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_r_g_bcolor.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RGBcolor} (const GLubyte &R=0, const GLubyte &G=0, const GLubyte &B=0)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator==} (const {\b RGBcolor} &col)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+GLubyte {\b Red}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+GLubyte {\b Green}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+GLubyte {\b Blue}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual std::ostream & {\b _Edit} (std::ostream &os=std::cout) const\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v RGBcolor\:RGBcolor}
+{\xe \v RGBcolor\:RGBcolor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+RGBcolor::RGBcolor (const GLubyte &  {\i R} = {\f2 0}, const GLubyte &  {\i G} = {\f2 0}, const GLubyte &  {\i B} = {\f2 0}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHG}
+{\bkmkend AAAAAAAAHG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v _Edit\:RGBcolor}
+{\xe \v RGBcolor\:_Edit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::ostream & RGBcolor::_Edit (std::ostream &  {\i os} = {\f2 std::cout}) const{\f2 [protected]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAAHH}
+{\bkmkend AAAAAAAAHH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implements {\b nsUtil::IEditable} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHI \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\xe \v operator==\:RGBcolor}
+{\xe \v RGBcolor\:operator==}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool RGBcolor::operator== (const {\b RGBcolor} &  {\i col}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHJ}
+{\bkmkend AAAAAAAAHJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v Blue\:RGBcolor}
+{\xe \v RGBcolor\:Blue}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+GLubyte RGBcolor::Blue}}
+\par
+{\bkmkstart AAAAAAAAHK}
+{\bkmkend AAAAAAAAHK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Green\:RGBcolor}
+{\xe \v RGBcolor\:Green}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+GLubyte RGBcolor::Green}}
+\par
+{\bkmkstart AAAAAAAAHL}
+{\bkmkend AAAAAAAAHL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Red\:RGBcolor}
+{\xe \v RGBcolor\:Red}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+GLubyte RGBcolor::Red}}
+\par
+{\bkmkstart AAAAAAAAHM}
+{\bkmkend AAAAAAAAHM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/graph/{\b rgbcolor.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/graph/{\b rgbcolor.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+triangle Class Reference\par \pard\plain 
+{\tc\tcl2 \v triangle}
+{\xe \v triangle}
+{\bkmkstart AAAAAAAAHN}
+{\bkmkend AAAAAAAAHN}
+\par
+{
+{\f2 #include <triangle.h>}}\par
+Inheritance diagram for triangle:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classtriangle.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b triangle} (const {\b pos} &pos1, const {\b pos} &pos2, const {\b pos} &pos3, const {\b RGBcolor} &borderCol_, const {\b RGBcolor} &fillCol_={\b RGBcolor}())\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b triangle} (const {\b baseFig} &)  throw (myexception)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b triangle} {\b operator+} (const {\b pos} &pos_) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b triangle} {\b operator*} (const float &f) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~triangle} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual {\b minGL} & {\b _Edit} ({\b minGL} &Window) const  throw (myexception)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b triangle} {\b operator+} (const {\b pos} &p, const {\b triangle} &t)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b triangle} {\b operator*} (const float &f, const {\b triangle} &t)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Additional Inherited Members\par
+\pard\plain 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v triangle\:triangle}
+{\xe \v triangle\:triangle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+triangle::triangle (const {\b pos} &  {\i pos1}, const {\b pos} &  {\i pos2}, const {\b pos} &  {\i pos3}, const {\b RGBcolor} &  {\i borderCol_}, const {\b RGBcolor} &  {\i fillCol_} = {\f2 {\b RGBcolor}\~ ()})}}
+\par
+{\bkmkstart AAAAAAAAHO}
+{\bkmkend AAAAAAAAHO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v triangle\:triangle}
+{\xe \v triangle\:triangle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+triangle::triangle (const {\b baseFig} &  {\i b}) throw ( {\b myexception}) }}
+\par
+{\bkmkstart AAAAAAAAHP}
+{\bkmkend AAAAAAAAHP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~triangle\:triangle}
+{\xe \v triangle\:~triangle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+triangle::~triangle (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHQ}
+{\bkmkend AAAAAAAAHQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v _Edit\:triangle}
+{\xe \v triangle\:_Edit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b minGL} & triangle::_Edit ({\b minGL} &  {\i Window}) const throw ( {\b myexception}) {\f2 [protected]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Reimplemented from {\b baseFig} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAACZ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\xe \v operator*\:triangle}
+{\xe \v triangle\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b triangle} triangle::operator* (const float &  {\i f}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHR}
+{\bkmkend AAAAAAAAHR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:triangle}
+{\xe \v triangle\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b triangle} triangle::operator+ (const {\b pos} &  {\i pos_}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHS}
+{\bkmkend AAAAAAAAHS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends And Related Function Documentation\par
+\pard\plain 
+{\xe \v operator*\:triangle}
+{\xe \v triangle\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b triangle} operator* (const float &  {\i f}, const {\b triangle} &  {\i t}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAAHT}
+{\bkmkend AAAAAAAAHT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:triangle}
+{\xe \v triangle\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b triangle} operator+ (const {\b pos} &  {\i p}, const {\b triangle} &  {\i t}){\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAAAHU}
+{\bkmkend AAAAAAAAHU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b triangle.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/figs/{\b triangle.cpp}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/_circle.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/_circle.cpp}
+{\xe \v src/figs/_circle.cpp}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "circle.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/_circle.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/_circle.h}
+{\xe \v src/figs/_circle.h}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "pixel.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b circle}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/basefig.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/basefig.cpp}
+{\xe \v src/figs/basefig.cpp}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include "basefig.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b baseFig} {\b operator*} (const float &f, const {\b baseFig} &B)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b baseFig} {\b operator+} (const {\b pos} &pos_, const {\b baseFig} &B)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v operator*\:basefig.cpp}
+{\xe \v basefig.cpp\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b baseFig} operator* (const float &  {\i f}, const {\b baseFig} &  {\i B})}}
+\par
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:basefig.cpp}
+{\xe \v basefig.cpp\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b baseFig} operator+ (const {\b pos} &  {\i pos_}, const {\b baseFig} &  {\i B})}}
+\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/basefig.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/basefig.h}
+{\xe \v src/figs/basefig.h}
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <map>}\par
+{\f2 #include "pos.h"}\par
+{\f2 #include "../graph/rgbcolor.h"}\par
+{\f2 #include "../graph/iminglinjectable.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b baseFig}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/circle.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/circle.cpp}
+{\xe \v src/figs/circle.cpp}
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <cmath>}\par
+{\f2 #include "circle.h"}\par
+{\f2 #include "../tools/CstCodErr.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/circle.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/circle.h}
+{\xe \v src/figs/circle.h}
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "basefig.h"}\par
+{\f2 #include "../tools/myexception.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b circle}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/figure.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/figure.cpp}
+{\xe \v src/figs/figure.cpp}
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "figure.h"}\par
+{\f2 #include "line.h"}\par
+{\f2 #include "circle.h"}\par
+{\f2 #include "triangle.h"}\par
+{\f2 #include "rectangle.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/figure.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/figure.h}
+{\xe \v src/figs/figure.h}
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <vector>}\par
+{\f2 #include <memory>}\par
+{\f2 #include <type_traits>}\par
+{\f2 #include "../graph/iminglinjectable.h"}\par
+{\f2 #include "basefig.h"}\par
+{\f2 #include "circle.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b figure}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/line.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/line.cpp}
+{\xe \v src/figs/line.cpp}
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "line.h"}\par
+{\f2 #include "../tools/CstCodErr.h"}\par
+{\f2 #include "../tools/tools.h"}\par
+{\f2 #include <cmath>}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/line.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/line.h}
+{\xe \v src/figs/line.h}
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "basefig.h"}\par
+{\f2 #include "../tools/myexception.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b line}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/minglstring.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/minglstring.cpp}
+{\xe \v src/figs/minglstring.cpp}
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "minglstring.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b minglString} {\b operator+} (const {\b pixel} &pix, const std::string &str)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v operator+\:minglstring.cpp}
+{\xe \v minglstring.cpp\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b minglString} operator+ (const {\b pixel} &  {\i pix}, const std::string &  {\i str})}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/minglstring.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/minglstring.h}
+{\xe \v src/figs/minglstring.h}
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <string>}\par
+{\f2 #include "pixel.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b minglString}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b minglString} {\b operator+} (const {\b pixel} &pix, const std::string &str)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v operator+\:minglstring.h}
+{\xe \v minglstring.h\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b minglString} operator+ (const {\b pixel} &  {\i pix}, const std::string &  {\i str})}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/pos.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/pos.h}
+{\xe \v src/figs/pos.h}
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b pos}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/graph/pos.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/graph/pos.h}
+{\xe \v src/graph/pos.h}
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b pos}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/rectangle.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/rectangle.cpp}
+{\xe \v src/figs/rectangle.cpp}
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "rectangle.h"}\par
+{\f2 #include "triangle.h"}\par
+{\f2 #include "line.h"}\par
+{\f2 #include "../tools/CstCodErr.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/rectangle.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/rectangle.h}
+{\xe \v src/figs/rectangle.h}
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "basefig.h"}\par
+{\f2 #include "../tools/myexception.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b rectangle}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/triangle.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/triangle.cpp}
+{\xe \v src/figs/triangle.cpp}
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <vector>}\par
+{\f2 #include <algorithm>}\par
+{\f2 #include "triangle.h"}\par
+{\f2 #include "line.h"}\par
+{\f2 #include "../tools/CstCodErr.h"}\par
+{\f2 #include "../tools/tools.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/figs/triangle.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/figs/triangle.h}
+{\xe \v src/figs/triangle.h}
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "basefig.h"}\par
+{\f2 #include "../tools/myexception.h"}\par
+{\f2 #include "../graph/iminglinjectable.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b triangle}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/graph/iminglinjectable.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/graph/iminglinjectable.cpp}
+{\xe \v src/graph/iminglinjectable.cpp}
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "iminglinjectable.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/graph/iminglinjectable.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/graph/iminglinjectable.h}
+{\xe \v src/graph/iminglinjectable.h}
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "mingl.h"}\par
+{\f2 #include "../tools/myexception.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b IminGlInjectable}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/graph/libgraphique_fonts.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/graph/libgraphique_fonts.h}
+{\xe \v src/graph/libgraphique_fonts.h}
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b font}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const struct {\b font} {\b FONT_HELVETICA_10} = \{14, Helvetica10_Character_Map\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const struct {\b font} {\b FONT_HELVETICA_12} = \{16, Helvetica12_Character_Map\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const struct {\b font} {\b FONT_HELVETICA_18} = \{23, Helvetica18_Character_Map\}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variable Documentation\par
+\pard\plain 
+{\xe \v FONT_HELVETICA_10\:libgraphique_fonts.h}
+{\xe \v libgraphique_fonts.h\:FONT_HELVETICA_10}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const struct {\b font} FONT_HELVETICA_10 = \{14, Helvetica10_Character_Map\}}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v FONT_HELVETICA_12\:libgraphique_fonts.h}
+{\xe \v libgraphique_fonts.h\:FONT_HELVETICA_12}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const struct {\b font} FONT_HELVETICA_12 = \{16, Helvetica12_Character_Map\}}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v FONT_HELVETICA_18\:libgraphique_fonts.h}
+{\xe \v libgraphique_fonts.h\:FONT_HELVETICA_18}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const struct {\b font} FONT_HELVETICA_18 = \{23, Helvetica18_Character_Map\}}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/graph/mingl.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/graph/mingl.cpp}
+{\xe \v src/graph/mingl.cpp}
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <map>}\par
+{\f2 #include "mingl.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b BIND_CALLBACK}(HANDLER)\~ callBackBuilder<decltype(HANDLER), HANDLER>::callback\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v BIND_CALLBACK\:mingl.cpp}
+{\xe \v mingl.cpp\:BIND_CALLBACK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define BIND_CALLBACK( HANDLER)\~ callBackBuilder<decltype(HANDLER), HANDLER>::callback}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/graph/mingl.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/graph/mingl.h}
+{\xe \v src/graph/mingl.h}
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <string>}\par
+{\f2 #include <vector>}\par
+{\f2 #include <queue>}\par
+{\f2 #include <memory>}\par
+{\f2 #include "freeglut.h"}\par
+{\f2 #include "libgraphique_fonts.h"}\par
+{\f2 #include "rgbcolor.h"}\par
+{\f2 #include "../tools/myexception.h"}\par
+{\f2 #include "../figs/pos.h"}\par
+{\f2 #include "../tools/pixelexception.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b minGL}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedefs\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef std::pair< int, bool > {\b keyType}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The {\b minGL} class sert de classe de base \'E0 tout le bordel. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedef Documentation\par
+\pard\plain 
+{\xe \v keyType\:mingl.h}
+{\xe \v mingl.h\:keyType}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef std::pair<int, bool> {\b keyType}}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The {\b minGL} class sert de classe de base \'E0 tout le bordel. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/graph/rgbcolor.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/graph/rgbcolor.cpp}
+{\xe \v src/graph/rgbcolor.cpp}
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "rgbcolor.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/graph/rgbcolor.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/graph/rgbcolor.h}
+{\xe \v src/graph/rgbcolor.h}
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "freeglut.h"}\par
+{\f2 #include "../tools/IEditable.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b RGBcolor}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KBlack} \{ 0, 0, 0\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KWhite} \{255, 255, 255\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KRed} \{255, 0, 0\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KLime} \{0 , 255, 0\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KBlue} \{0 , 0, 255\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KYellow} \{255, 255, 0\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KCyan} \{0 , 255, 255\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KMagenta} \{255, 0, 255\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KSilver} \{192, 192, 192\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KGray} \{128, 128, 128\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KMaroon} \{128, 0, 0\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KOlive} \{128, 128, 0\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KGreen} \{0 , 128, 0\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KPurple} \{128, 0, 128\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KTeal} \{0 , 128, 128\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RGBcolor} {\b KNavy} \{0 , 0, 128\}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variable Documentation\par
+\pard\plain 
+{\xe \v KBlack\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KBlack}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KBlack \{ 0, 0, 0\}}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KBlue\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KBlue}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KBlue \{0 , 0, 255\}}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KCyan\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KCyan}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KCyan \{0 , 255, 255\}}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KGray\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KGray}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KGray \{128, 128, 128\}}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KGreen\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KGreen}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KGreen \{0 , 128, 0\}}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KLime\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KLime}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KLime \{0 , 255, 0\}}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KMagenta\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KMagenta}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KMagenta \{255, 0, 255\}}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KMaroon\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KMaroon}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KMaroon \{128, 0, 0\}}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KNavy\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KNavy}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KNavy \{0 , 0, 128\}}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KOlive\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KOlive}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KOlive \{128, 128, 0\}}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KPurple\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KPurple}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KPurple \{128, 0, 128\}}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KRed\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KRed}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KRed \{255, 0, 0\}}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KSilver\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KSilver}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KSilver \{192, 192, 192\}}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KTeal\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KTeal}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KTeal \{0 , 128, 128\}}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KWhite\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KWhite}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KWhite \{255, 255, 255\}}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v KYellow\:rgbcolor.h}
+{\xe \v rgbcolor.h\:KYellow}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b RGBcolor} KYellow \{255, 255, 0\}}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/main.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/main.cpp}
+{\xe \v src/main.cpp}
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "graph/rgbcolor.h"}\par
+{\f2 #include "graph/mingl.h"}\par
+{\f2 #include "graph/pos.h"}\par
+{\f2 #include "figs/rectangle.h"}\par
+{\f2 #include "figs/triangle.h"}\par
+{\f2 #include "figs/circle.h"}\par
+{\f2 #include "figs/figure.h"}\par
+{\f2 #include <iostream>}\par
+{\f2 #include <utility>}\par
+{\f2 #include <chrono>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b position}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b WIDTH}\~ 800\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b HEIGHT}\~ 600\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedefs\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef pair< int, bool > {\b keyType}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b drawRectClipping} ({\b minGL} &Window, {\b position} posStart, {\b position} posEnd, const {\b RGBcolor} col)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v HEIGHT\:main.cpp}
+{\xe \v main.cpp\:HEIGHT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define HEIGHT\~ 600}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v WIDTH\:main.cpp}
+{\xe \v main.cpp\:WIDTH}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define WIDTH\~ 800}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedef Documentation\par
+\pard\plain 
+{\xe \v keyType\:main.cpp}
+{\xe \v main.cpp\:keyType}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef pair<int, bool> {\b keyType}}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v drawRectClipping\:main.cpp}
+{\xe \v main.cpp\:drawRectClipping}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void drawRectClipping ({\b minGL} &  {\i Window}, {\b position}  {\i posStart}, {\b position}  {\i posEnd}, const {\b RGBcolor}  {\i col})}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v main\:main.cpp}
+{\xe \v main.cpp\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main ()}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/tools/CException.cxx File Reference\par \pard\plain 
+{\tc\tcl2 \v src/tools/CException.cxx}
+{\xe \v src/tools/CException.cxx}
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+classe CException }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include "CException.h"}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+classe CException \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Authors\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+M. Laporte, D. Mathieu\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Date\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+23/03/2010\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Version\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+V1.0 \par
+}}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/tools/CException.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/tools/CException.h}
+{\xe \v src/tools/CException.h}
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Declaration de la classe CException. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <string>}\par
+{\f2 #include <iostream>}\par
+{\f2 #include <exception>}\par
+{\f2 #include "CstCodErr.h"}\par
+{\f2 #include "IEditable.h"}\par
+{\f2 #include "CException.hxx"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b nsUtil::CException}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ {\b nsUtil}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Declaration de la classe CException. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Authors\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+M. Laporte, D. Mathieu\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Date\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+23/03/2010\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Version\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+V1.0 \par
+}}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/tools/CException.hxx File Reference\par \pard\plain 
+{\tc\tcl2 \v src/tools/CException.hxx}
+{\xe \v src/tools/CException.hxx}
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+classe CException }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <string>}\par
+{\f2 #include "CException.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b CEXC}\~ {\b nsUtil::CException}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+classe CException \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Authors\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+M. Laporte, D. Mathieu\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Date\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+23/03/2010\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Version\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+V1.0 \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v CEXC\:CException.hxx}
+{\xe \v CException.hxx\:CEXC}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define CEXC\~ {\b nsUtil::CException}}}
+\par
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/tools/CstCodErr.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/tools/CstCodErr.h}
+{\xe \v src/tools/CstCodErr.h}
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Codes d'erreurs. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <map>}\par
+{\f2 #include <string>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ {\b nsUtil}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Enumerations\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum \{ {\b nsUtil::KNoExc} = 0, 
+{\b nsUtil::KNoError} = 0, 
+{\b nsUtil::kColorOutOfBounds} = 100, 
+{\b nsUtil::KErrNoFile} = 252, 
+{\b nsUtil::KErrArg} = 253, 
+{\b nsUtil::KExcStd} = 254, 
+{\b nsUtil::kExcInconnue} = -1, 
+{\b nsUtil::kErrTooHight} = 300, 
+{\b nsUtil::kErrTooRight} = 301, 
+{\b nsUtil::kErrFontSize} = 302, 
+{\b nsUtil::kNoTriangle} = 303, 
+{\b nsUtil::kNoLine} = 304, 
+{\b nsUtil::kNoRectangle} = 305, 
+{\b nsUtil::kNoCircle} = 306, 
+{\b nsUtil::kTypeNotFound} = 307
+ \}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const std::map< unsigned, std::string > {\b nsUtil::kError}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Codes d'erreurs. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Authors\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+D. Mathieu\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Date\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+28/08/2010\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Version\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+V2.0 \par
+}}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/tools/IEditable.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/tools/IEditable.h}
+{\xe \v src/tools/IEditable.h}
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include "IEditable.hxx"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b nsUtil::IEditable}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ {\b nsUtil}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::ostream & {\b nsUtil::operator<<} (std::ostream &os, const IEditable &Obj)\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/tools/IEditable.hxx File Reference\par \pard\plain 
+{\tc\tcl2 \v src/tools/IEditable.hxx}
+{\xe \v src/tools/IEditable.hxx}
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include "IEditable.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/tools/myexception.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/tools/myexception.cpp}
+{\xe \v src/tools/myexception.cpp}
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "myexception.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/tools/myexception.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/tools/myexception.h}
+{\xe \v src/tools/myexception.h}
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "CException.h"}\par
+{\f2 #include "CstCodErr.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b myexception}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/tools/pixel.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/tools/pixel.cpp}
+{\xe \v src/tools/pixel.cpp}
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "pixel.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/tools/pixel.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/tools/pixel.h}
+{\xe \v src/tools/pixel.h}
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <string>}\par
+{\f2 #include "../graph/rgbcolor.h"}\par
+{\f2 #include "tools.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b pixel}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/tools/pixelexception.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/tools/pixelexception.cpp}
+{\xe \v src/tools/pixelexception.cpp}
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "pixelexception.h"}\par
+{\f2 #include <string>}\par
+{\f2 #include <sstream>}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/tools/pixelexception.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/tools/pixelexception.h}
+{\xe \v src/tools/pixelexception.h}
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <exception>}\par
+{\f2 #include "../graph/pos.h"}\par
+{\f2 #include "../graph/rgbcolor.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b PixelException}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/tools/tools.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v src/tools/tools.cpp}
+{\xe \v src/tools/tools.cpp}
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "tools.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::pair< float, float > {\b computeab} (const {\b pos} &pt1, const {\b pos} &pt2)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v computeab\:tools.cpp}
+{\xe \v tools.cpp\:computeab}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::pair<float, float> computeab (const {\b pos} &  {\i pt1}, const {\b pos} &  {\i pt2})}}
+\par
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+src/tools/tools.h File Reference\par \pard\plain 
+{\tc\tcl2 \v src/tools/tools.h}
+{\xe \v src/tools/tools.h}
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <algorithm>}\par
+{\f2 #include "../graph/pos.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::pair< float, float > {\b computeab} (const {\b pos} &pt1, const {\b pos} &pt2)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v computeab\:tools.h}
+{\xe \v tools.h\:computeab}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::pair<float, float> computeab (const {\b pos} &  {\i pt1}, const {\b pos} &  {\i pt2})}}
+\par
+{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

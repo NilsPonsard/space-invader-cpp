@@ -38,7 +38,6 @@ void drawRectClipping(minGL &Window, position posStart, position posEnd, const R
 }
 
 int main()
-
 {
     int x = 0;
     int y = 0;
@@ -68,6 +67,12 @@ int main()
                     boucle = false;
                 if (key.first == 102 && key.second == true)
                     x += 20;
+                if (key.first == 100 && key.second == true)
+                    x -= 20;
+                if (key.first == 101 && key.second == true)
+                    y -= 20;
+                if (key.first == 103 && key.second == true)
+                    y += 20;
             }
         }
     }
