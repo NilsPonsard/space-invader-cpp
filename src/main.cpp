@@ -1,80 +1,29 @@
+#include "graph/rgbcolor.h"
+#include "graph/mingl.h"
+#include "graph/pos.h"
+#include "figs/rectangle.h"
+#include "figs/triangle.h"
+#include "figs/circle.h"
+#include "figs/figure.h"
 #include <iostream>
-#include <vector>
-#include <cstdlib>   //rand, srand
-#include <ctime>     //time
-#include <algorithm> //max_element
-
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <termios.h>
-#include <chrono>
-
-#include <iomanip>
-#include <entity.h>
-#include <gameUtils.h>
-
-#define WIDTH 50
-#define HEIGHT 100
-
+#include <utility>
 using namespace std;
-
-void boucle()
-{
-  Player test({6, 6});
-  char c = '_';
-  auto timer = chrono::steady_clock::now();
-
-  while (true)
-  {
-    timer = chrono::steady_clock::now();
-    /*
-     * Affichage des éléments
-     *
-     */
-    test.show();
-    while (chrono::duration_cast<chrono::milliseconds>(chrono::steady_clock::now() - timer).count() < 100)
-    {
-      /*
-       * commandes
-       */
-
-      c = '_';
-      read(STDIN_FILENO, &c, 1);
-      if (c == '\004') /* C-d */
-        break;
-      switch (c)
-      {
-      case ' ':
-        cout << "espace" << endl;
-        break;
-      case 'A':
-        cout << "Haut" << endl;
-        break;
-      case 'C':
-        cout << "Droite" << endl;
-        break;
-      case 'B':
-        cout << "Bas" << endl;
-        break;
-      case 'D':
-        cout << "Gauche" << endl;
-        break;
-      default:
-        break;
-      }
-      //cout << chrono::duration_cast<chrono::milliseconds>(chrono::steady_clock::now() - timer).count() << endl;
-    }
-
-    ClearScreen();
-  }
-}
+typedef pair<int, bool> keyType; // clef, spécial
 
 int main()
 {
-  srand(time(NULL));
-  set_input_mode();
-  boucle();
-
-  return EXIT_SUCCESS;
+    minGL Window;
+    Window.initGlut();
+    Window.initGraphic();
+    Window << rectangle({0, 0}, {50, 50}, KBlack, KBlack);
+    keyType key;
+    while (true)
+    {
+        key = Window.get_key2();
+        if (key.first != 0)
+            cout << key.first << ':' << key.second << endl;
+    }
+    Window.updateGraphic();
+    Window.get_key();
+    return 0;
 }
