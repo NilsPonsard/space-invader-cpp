@@ -127,7 +127,9 @@ void minGL::initGraphic()
     glutReshapeFunc(BIND_CALLBACK(&minGL::callReshape));
     glutDisplayFunc(BIND_CALLBACK(&minGL::callDisplay));
     glutKeyboardFunc(BIND_CALLBACK(&minGL::callKeyboard));
+    glutKeyboardUpFunc(BIND_CALLBACK(&minGL::callKeyboardUp));
     glutSpecialFunc(BIND_CALLBACK(&minGL::callKeyboardSpecial));
+    glutSpecialUpFunc(BIND_CALLBACK(&minGL::callKeyboardUpSpecial));
 
     // Efface ecran
     clearScreen();
@@ -163,15 +165,28 @@ void minGL::callDisplay()
 void minGL::callKeyboard(unsigned char k, int x, int y)
 {
     //cout << x << ':' << y << ':' << int(key) << endl;
-    keyboardBuffer.push(keyType(k, false));
+    keyType key(k, false);
+    keydown[key] = true;
+    keyboardBuffer.push(key);
     // cout << int (key) << endl;
+}
+void minGL::callKeyboardUp(unsigned char k, int x, int y)
+{
+    keyType key(k, false);
+    keydown[key] = false;
 }
 
 void minGL::callKeyboardSpecial(int k, int x, int y)
 {
     //cout << x << ':' << y << ':' << k << endl;
-
-    keyboardBuffer.push(keyType(k, true));
+    keyType key(k, true);
+    keydown[key] = true;
+    keyboardBuffer.push(key);
+}
+void minGL::callKeyboardUpSpecial(int k, int x, int y)
+{
+    keyType key(k, true);
+    keydown[key] = false;
 }
 
 unsigned minGL::getWindowWidth() const

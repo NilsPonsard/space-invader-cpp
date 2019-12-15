@@ -5,7 +5,7 @@
 #include <vector>
 #include <queue>
 #include <memory> //shared_ptr
-
+#include <map>
 #include "freeglut.h"
 
 #include "libgraphique_fonts.h"
@@ -24,6 +24,7 @@
 
 //pour les fonts et l'affichage des string voir : https://www.opengl.org/resources/libraries/glut/spec3/node76.html
 typedef std::pair<int, bool> keyType; // clef, spécial
+typedef std::map<keyType, bool> keyMap;
 class minGL
 {
 private:
@@ -45,7 +46,9 @@ private:
     void callReshape(int h, int w);
     void callDisplay();
     void callKeyboard(unsigned char key, int x = 0, int y = 0);
+    void callKeyboardUp(unsigned char key, int x = 0, int y = 0);
     void callKeyboardSpecial(int key, int x = 0, int y = 0);
+    void callKeyboardUpSpecial(int key, int x = 0, int y = 0);
 
 public:
     static void initGlut()
@@ -55,6 +58,7 @@ public:
     }
     void initGraphic();
     void stopGaphic();
+    keyMap keydown;
 
     minGL(const unsigned &Width = 640, const unsigned &Height = 480, const std::string &Name = std::string());
     ~minGL();
