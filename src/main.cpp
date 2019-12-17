@@ -108,9 +108,10 @@ int main()
 
         while (chrono::duration_cast<chrono::milliseconds>(chrono::steady_clock::now() - timer).count() < frameTime)
         {
+            /*
             key = Window.get_key2();
             if (key.first != 0)
-                cout << key.first << " : " << key.second << endl;
+                cout << key.first << " : " << key.second << endl;*/
         }
     }
     return 0;
