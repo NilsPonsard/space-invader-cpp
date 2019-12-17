@@ -67,6 +67,8 @@ public:
     void setPixel(const pos &pos_, const RGBcolor &col) throw(PixelException);
     keyType get_key();
     keyType get_key2();
+    void setBgColor(const RGBcolor &color);
+    void fullScreen();
 
     unsigned getWindowWidth() const;
     unsigned getWindowHeight() const;

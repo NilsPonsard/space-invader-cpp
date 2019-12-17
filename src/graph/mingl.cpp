@@ -60,6 +60,18 @@ void minGL::clearScreen() throw(myexception)
         for (unsigned j(0); j < windowHeight; ++j)
             setPixel(pos(i, j), bgColor);
 }
+void minGL::setBgColor(const RGBcolor &color)
+{
+    bgColor = color;
+}
+
+void minGL::fullScreen()
+{
+    unsigned height = windowHeight;
+    unsigned width = windowWidth;
+    glutFullScreen();
+    //glutSetupVideoResizing;
+}
 
 void minGL::setPixel(const pos &pos_, const RGBcolor &col) throw(PixelException)
 {

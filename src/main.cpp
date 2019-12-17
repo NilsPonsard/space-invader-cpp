@@ -26,6 +26,9 @@ const keyType LEFT({100, true});
 const keyType RIGHT({102, true});
 const keyType ESCAPE({27, false});
 
+const unsigned frameRate(60);
+const unsigned frameTime(1000 / frameRate);
+
 typedef vector<int> pixelArray;
 typedef vector<pixelArray> pixelMatrix;
 
@@ -43,15 +46,17 @@ struct position
 // affichage de rectangle sans faire crash
 void drawRectClipping(minGL &Window, position posStart, position posEnd, const RGBcolor col)
 {
-    posStart.y = (-1 * posStart.y + HEIGHT);
-    posEnd.y = (-1 * posEnd.y + HEIGHT);
-    posStart.x = min(posStart.x, WIDTH);
+    int height = Window.getWindowHeight();
+    int width = Window.getWindowWidth();
+    posStart.y = (-1 * posStart.y + height);
+    posEnd.y = (-1 * posEnd.y + height);
+    posStart.x = min(posStart.x, width);
     posStart.x = max(posStart.x, 0);
-    posStart.y = min(posStart.y, HEIGHT);
+    posStart.y = min(posStart.y, height);
     posStart.y = max(posStart.y, 0);
-    posEnd.x = min(posEnd.x, WIDTH);
+    posEnd.x = min(posEnd.x, width);
     posEnd.x = max(posEnd.x, 0);
-    posEnd.y = min(posEnd.y, HEIGHT);
+    posEnd.y = min(posEnd.y, height);
     posEnd.y = max(posEnd.y, 0);
     Window << rectangle({posStart.x, posStart.y}, {posEnd.x, posEnd.y}, col, col);
 }
@@ -69,7 +74,7 @@ void drawPlayer(minGL &Window, position pos)
 
 int main()
 {
-
+    cout << frameTime << endl;
     int x = 0;
     int y = 0;
     auto timer = chrono::steady_clock::now();
@@ -78,46 +83,35 @@ int main()
     Window.initGraphic();
     keyType key;
     bool boucle(true);
+    //Window.fullScreen();
+
+    Window.setBgColor(KGreen);
     while (boucle) // boucle du jeu
     {
-        Window.clearScreen();
         timer = chrono::steady_clock::now();
+        Window.clearScreen();
         // gestion de l'affichage
+        //cout << Window.keydown[RIGHT] << endl;
+        if (Window.keydown[ESCAPE]) // stopper si la touche échap est pressée
+            boucle = false;
+        if (Window.keydown[RIGHT])
+            x += 5;
+        if (Window.keydown[LEFT])
+            x -= 5;
+        if (Window.keydown[DOWN])
+            y += 5;
+        if (Window.keydown[UP])
+            y -= 5;
         drawPlayer(Window, {x, y});
 
         Window.updateGraphic();
 
-        while (chrono::duration_cast<chrono::milliseconds>(chrono::steady_clock::now() - timer).count() < 100)
+        while (chrono::duration_cast<chrono::milliseconds>(chrono::steady_clock::now() - timer).count() < frameTime)
         {
-            /*
             key = Window.get_key2();
-            //gestion des commandes
-            if (key.first != 0) // si une touche a été pressée
-            {
-                cout << key.first << ':' << key.second << endl;
-                if (key.first == 27 && key.second == false) // stopper si la touche échap est pressée
-                    boucle = false;
-                if (key.first == 102 && key.second == true)
-                    x += 20;
-                if (key.first == 100 && key.second == true)
-                    x -= 20;
-                if (key.first == 101 && key.second == true)
-                    y -= 20;
-                if (key.first == 103 && key.second == true)
-                    y += 20;
-            }*/
+            if (key.first != 0)
+                cout << key.first << " : " << key.second << endl;
         }
-        cout << Window.keydown[RIGHT] << endl;
-        if (Window.keydown[ESCAPE]) // stopper si la touche échap est pressée
-            boucle = false;
-        if (Window.keydown[RIGHT])
-            x += 20;
-        if (Window.keydown[LEFT])
-            x -= 20;
-        if (Window.keydown[DOWN])
-            y += 20;
-        if (Window.keydown[UP])
-            y -= 20;
     }
     return 0;
 }
