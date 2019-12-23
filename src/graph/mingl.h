@@ -65,6 +65,7 @@ public:
     void updateGraphic();
     void clearScreen() throw(myexception);
     void setPixel(const pos &pos_, const RGBcolor &col) throw(PixelException);
+    void setPixel2(const pos &pos_, const RGBcolor &col);
     keyType get_key();
     keyType get_key2();
     void setBgColor(const RGBcolor &color);
