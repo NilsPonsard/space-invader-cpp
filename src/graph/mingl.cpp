@@ -89,9 +89,10 @@ void minGL::setPixel(const pos &pos_, const RGBcolor &col) throw(PixelException)
 }
 void minGL::setPixel2(const pos &pos_, const RGBcolor &col)
 {
-
-    //if (pos_.abs > windowWidth) throw myexception (kErrTooRight);
-    //if (pos_.ord > windowHeight) throw myexception (kErrTooHight);
+    /*
+        @brief  setPixel, but safe for memory without exceptions, don't draw what is outside the screen
+        @author Nils Ponsard$
+    */
     if (pos_.abs > windowWidth)
         return;
     if (pos_.ord > windowHeight)
